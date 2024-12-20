@@ -1,0 +1,17 @@
+<odoo>
+    <menuitem id="menu_attendance_webcam" name="Attendance Webcam" parent="hr_attendance.menu_hr_attendance_root" sequence="100"/>
+
+    
+            <record id="action_attendance_webcam" model="ir.actions.act_window">
+        <field name="name"></field>
+        <field name="res_model">attendance.webcam.wizard</field>
+        <field name="view_mode">form</field>  <!-- Show tree and form views -->
+         <field name="target">new</field> 
+    </record>
+
+    <menuitem id="submenu_attendance_webcam_action"
+              name="Webcam Attendance"
+              parent="menu_attendance_webcam"
+              action="action_attendance_webcam"
+              sequence="10"/>
+</odoo>
